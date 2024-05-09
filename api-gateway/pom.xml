@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sanajitjana</groupId>
-	<artifactId>service-registry</artifactId>
+	<artifactId>api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Service Registry - Internet Banking</name>
-	<description>The service registry is simply an application that keeps the track of services inside the microservice architecture, and It should be highly available and up to date. Normally in microservices, any service could go up and down, hence all the details regarding the status of those microservices should be communicated with the registry. That’s what basically happens with registration.</description>
+	<name>API Gateway - Internet Banking</name>
+	<description>API gateway is a central entry point for clients to access various microservices. It serves as a reverse proxy, routing client requests to the appropriate microservices and handling cross-cutting concerns such as authentication, authorization, rate limiting, logging, and monitoring.</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
@@ -28,7 +28,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
 		<dependency>
